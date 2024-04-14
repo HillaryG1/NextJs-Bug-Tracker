@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"app/issues/new/page.tsx -> react-simplemde-editor":{"id":7576,"files":["static/chunks/8b30ef62.f0689b9589329698.js","static/chunks/576.8c54c9ab4f57ff2a.js","static/chunks/562.fe86cd1bb014eb66.js"]}}';

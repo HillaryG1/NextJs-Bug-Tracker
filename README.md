@@ -1,6 +1,6 @@
 # Bug Tracker
 
-<img width="1409" alt="Screenshot 2024-04-13 at 9 29 10 PM" src="https://github.com/Hillaryx1/NextJs-Bug-Tracker/assets/160623507/b077ca26-9990-40b3-9623-56ecc2d98817">
+<img width="1409" src="https://github.com/Hillaryx1/NextJs-Bug-Tracker/assets/160623507/b077ca26-9990-40b3-9623-56ecc2d98817">
 
 ## Overview
 

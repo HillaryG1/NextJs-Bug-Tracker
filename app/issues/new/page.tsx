@@ -1,16 +1,23 @@
 'use client';
 import { Button, CalloutRoot, CalloutText, Text, TextField } from '@radix-ui/themes'
+import dynamic from 'next/dynamic'; 
 import SimpleMDE from "react-simplemde-editor";
 import { useForm, Controller, } from 'react-hook-form';
 import axios from 'axios';
 import "easymde/dist/easymde.min.css";
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { createIssueSchema } from '@/app/ValidationSchema';
 import { z } from 'zod';
 import ErrorMessage from '@/app/components/ErrorMessage';
 import Spinner from '@/app/components/Spinner';
+import { useState } from 'react';
+
+const SimpleMDEEditor = dynamic(() => import("react-simplemde-editor"), {
+    ssr: false,
+
+});
+
 
 type IssueForm = z.infer<typeof createIssueSchema>;
 
@@ -37,6 +44,9 @@ const NewIssuePage = () => {
     }
 });
 
+
+
+
   return (
     <div className="max-w-xl">
         {error && <CalloutRoot color="red" className='mb-5'>
@@ -44,7 +54,7 @@ const NewIssuePage = () => {
             </CalloutRoot>}
     <form 
      className='space-y-3' 
-     onSubmit={}
+     onSubmit={onSubmit}
      >
         <TextField.Root>
             <TextField.Input placeholder='Title' {...register('title')}/>
@@ -57,7 +67,7 @@ const NewIssuePage = () => {
         name="description"
         control={control}
         render={({ field }) =>  
-        <SimpleMDE placeholder='Description' {...field} />
+        <SimpleMDEEditor placeholder='Description' {...field} />
     }
 
     />

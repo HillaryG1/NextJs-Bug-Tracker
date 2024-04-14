@@ -32,5 +32,4 @@ Bug Tracker is an app built using Next.js, Tailwind CSS, Radix UI, and Prisma. I
 
 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

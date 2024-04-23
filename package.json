@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Hillaryx1.github.io/NextJs-Bug-Tracker ",
+  "homepage": "https://github.com/Hillaryx1/NextJs-Bug-Tracker ",
   "name": "bug-tracker",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build  && prisma generate",
     "deploy": "gh-pages -d .next"
   },
   "dependencies": {

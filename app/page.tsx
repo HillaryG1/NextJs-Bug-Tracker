@@ -1,6 +1,6 @@
 
 export default function Home() {
   return (
-   <div>Hello World</div>
+   <div>Hillary Gilbert, Full Stack Developer</div>
   )
 }

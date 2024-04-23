@@ -21,15 +21,12 @@ Bug Tracker is an app built using Next.js, Tailwind CSS, Radix UI, and Prisma. I
 - **Tailwind CSS:** A utility-first CSS framework used for styling the application.
 - **Radix UI:** A set of composable React components for building accessible UIs.
 - **Prisma:** A modern database toolkit for Node.js and TypeScript, used for interacting with the database.
+- **TypeScript** for type-safe code
+- **Zod** for data validation
 
 
 
-## Acknowledgements
 
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Radix UI](https://radix-ui.com/)
-- [Prisma](https://www.prisma.io/)
 
 
 
